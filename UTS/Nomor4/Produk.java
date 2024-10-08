@@ -1,0 +1,39 @@
+//Author : M. Sulthan Mahir Fadha (09020623035)
+package UTS.Nomor4;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Produk {
+    private String namaProduk;
+    private double harga;
+    private int stok;
+    private List<Kategori> kategoriList;
+
+    public Produk(String namaProduk, double harga, int stok) {
+        this.namaProduk = namaProduk;
+        this.harga = harga;
+        this.stok = stok;
+        this.kategoriList = new ArrayList<>();
+    }
+
+    public String getNamaProduk() {
+        return namaProduk;
+    }
+
+    public double getHarga() {
+        return harga;
+    }
+
+    public int getStok() {
+        return stok;
+    }
+
+    public void tambahkanKategori(Kategori kategori) {
+        kategoriList.add(kategori);
+    }
+
+    public List<Kategori> getKategoriList() {
+        return kategoriList;
+    }
+}
